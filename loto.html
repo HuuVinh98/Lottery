@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <title>Quay xổ số</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <link rel="stylesheet" href="./styles/loto.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="./images/loto.gif" style="width:40px;height:40px;" alt="Logo" />
+            <marquee behavior="alternate">Xổ Số VIP PRO - Tự <code>x</code> (Mua - Dò - Trúng - Trao Giải)</marquee>
+        </header>
+        <div class="navigation">
+            <button class="item"><a href="./index.html">Mua Vé Số</a></button>
+            <button class="item"><a href="./loto.html">Quay Số</a></button>
+        </div>
+        <div class="mainContent">
+            <div class="result">
+                <div class="resultArray">
+                    <span class="number" id="x6">0</span>
+                    <span class="number" id="x5">0</span>
+                    <span class="number" id="x4">0</span>
+                    <span class="number" id="x3">0</span>
+                    <span class="number" id="x2">0</span>
+                    <span class="number" id="x1">0</span>
+                </div>
+                <div class="rotation">
+                    <div class="control">
+                        <div class="controlItem">
+                            <span>GIẢI: </span><span id="prize">0</span>
+                        </div>
+                        <div class="controlItem">
+                            <span>LẦN QUAY: </span><span id="times">0</span>
+                        </div>
+                        <button class="action" id="action" onclick="action()">Quay Số</button>
+                    </div>
+                    <img id="lottery" src="./images/quaySo.gif" alt="Quay Số" style="width:200px;height:200px;" />
+                </div>
+            </div>
+            <div class="resultTable">
+                <div class="cc">
+                    <p>KẾT QUẢ XỔ SỐ VIP PRO</p>
+                    <table>
+                        <tr>
+                            <th>Giải</th>
+                            <th>Kết quả</th>
+                        </tr>
+                        <tr>
+                            <td>Giải Tám</td>
+                            <td id="prize8"></td>
+                        </tr>
+                        <tr>
+                            <td>Giải Bảy</td>
+                            <td id="prize7"></td>
+                        </tr>
+                        <tr>
+                            <td>Giải Sáu</td>
+                            <td id="prize6"></td>
+                        </tr>
+                        <tr>
+                            <td>Giải Năm</td>
+                            <td id="prize5"></td>
+                        </tr>
+                        <tr>
+                            <td>Giải Tư</td>
+                            <td id="prize4"></td>
+                        </tr>
+                        <tr>
+                            <td>Giải Ba</td>
+                            <td id="prize3"></td>
+                        </tr>
+                        <tr>
+                            <td>Giải Nhì</td>
+                            <td id="prize2"></td>
+                        </tr>
+                        <tr>
+                            <td>Giải Nhất</td>
+                            <td id="prize1"></td>
+                        </tr>
+                        <tr>
+                            <td>Giải Đặc Biệt</td>
+                            <td id="prize0"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="ll">
+                    <p class="vv">VÉ ĐÃ MUA</p>
+                    <div class="bought" id="bought"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="compare">
+
+        </div>
+    </div>
+    </div>
+    <script src="./js/loto.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: 20px auto 0px auto;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.1)), to(white));
+  background: linear-gradient(to right top, rgba(255, 255, 255, 0.1), white);
+}
+
+.wrapper header {
+  width: 100%;
+  height: 50px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper header marquee {
+  color: blue;
+  font-size: 20px;
+  font-style: initial;
+  text-shadow: 2px 2px 5px red;
+}
+
+.wrapper .navigation {
+  width: 100%;
+  height: 30px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#4808f8), to(rgba(72, 8, 248, 0.1)));
+  background: linear-gradient(to right top, #4808f8, rgba(72, 8, 248, 0.1));
+}
+
+.wrapper .navigation .item {
+  height: 100%;
+  border: none;
+  background: inherit;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.wrapper .navigation .item:hover {
+  background-color: #d6cfeb;
+}
+
+.wrapper .navigation .item:hover a {
+  color: yellow;
+}
+
+.wrapper .navigation .item a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper .ticketStore {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .ticketStore .wallet {
+  margin-left: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .ticketStore .wallet i {
+  color: chartreuse;
+  font-size: 30px;
+}
+
+.wrapper .ticketStore .wallet .coin {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper .ticketStore .seller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.wrapper .ticketStore .seller .space {
+  width: 30%;
+}
+
+.wrapper .ticketStore .seller img {
+  width: 40%;
+  height: 400px;
+}
+
+.wrapper .ticketStore .seller .buyList {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .ticketStore .seller .buyList .ticketImg {
+  margin-bottom: 5px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.wrapper .ticketStore .seller .buyList .ticketImg p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.wrapper .ticketStore .buyTicket {
+  border-radius: 30px 0px 30px 0px;
+  background-color: darkcyan;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.wrapper .ticketStore .buyTicket .buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .ticketStore .buyTicket .buy #buyTicket {
+  width: 40%;
+  font-size: 30px;
+  height: 35px;
+  text-align: center;
+  outline: none;
+}
+
+.wrapper .ticketStore .buyTicket .buy #submit {
+  width: 15%;
+  height: 35px;
+  font-size: 30px;
+  color: blue;
+}
+/*# sourceMappingURL=ticket.css.map */

@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+}
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 70%;
+    margin: 20px auto 0px auto;
+    border-radius: 10px;
+    background: linear-gradient(to right top, rgba(255,255,255,0.1),rgba(255,255,255,1));
+    header
+    {
+        width: 100%;
+        height: 50px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        marquee 
+        {
+            color: blue;
+            font-size: 20px;
+            font-style: initial;
+            text-shadow: 2px 2px 5px red;
+        }
+    }
+    .navigation
+    {
+        
+        width: 100%;
+        height: 30px;
+        background: linear-gradient(to right top, rgba($color: #4808f8, $alpha: 1.0),rgba($color: #4808f8, $alpha: 0.1));
+        .item
+        {
+            height: 100%;
+            border: none;
+            background:inherit;
+            margin-left: 10px;
+            margin-right: 10px;
+            &:hover
+            {
+                background-color: rgba($color: #d6cfeb, $alpha: 1.0);
+                a 
+                {
+                    color: yellow;
+                }
+            }
+            a
+            {
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+    }
+    .mainContent
+    {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top:20px;
+        .result
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .resultArray
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+               // border: 5px solid black;
+                width: 40%;
+                height: 100px;
+                border-radius: 10px;
+                background-color:white;
+                overflow: hidden;
+                .number
+                {
+                    font-size: 100px;
+                    color: red;
+                    text-shadow: 2px 2px 5px blue;
+                }
+            }
+            .rotation
+            {
+                margin-top: 20px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                .control
+                {
+                    display: flex;
+                    width: 100%;
+                    height: 50px;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    .controlItem
+                    {
+                        height: 50px;
+                        display: flex;
+                        width: 27%;
+                        align-items: center;
+                        text-align: center;
+                        font-size: 25px;
+                        font-weight: bold;
+                        border-radius: 10px;
+                        background-color:darkcyan;
+                        color: white;
+                        #prize,#times
+                        {
+                            background-color: white;
+                            border-radius: 10px;
+                            color: blue;
+                        }
+                        #prize
+                        {
+                            width: 67%;
+                        }
+                        #times
+                        {
+                            width:32%;
+                        }
+                    }
+                    .action
+                    {
+                        background-color:darkcyan;
+                        height: 50px;
+                        width: 16%;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        border-radius: 10px;
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: bold;
+                        font-family: 'Times New Roman', Times, serif;
+                        &:hover
+                        {
+                            background-color:yellowgreen;
+                            color: white;
+                        }
+                    }
+
+                }
+                #lottery
+                {
+                    margin-top: 20px;
+                }
+
+            }
+            
+        }
+        .resultTable
+            {
+                margin-top: 30px;
+                width: 100%;
+                height: 700px;
+               // align-items: center;
+                border-radius: 100px 0px 100px 0px;
+                display: flex;
+                //justify-content: center;
+                //flex-direction: column;
+                background: linear-gradient(to right bottom, rgba(255,255,255,0.1),rgba(255,255,255,1.0));
+                .cc
+                {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 70%;
+                        p 
+                    {
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: bolder;
+                        font-family: 'Times New Roman', Times, serif;
+                        color: yellowgreen;
+                        text-shadow: 2px 2px 5px yellow;
+                    }
+                    table 
+                    {
+                        width: 80%;
+                        //background-color:burlywood;
+                        height: 90%;
+                        font-size: 30px;
+                        th 
+                        {
+                            text-align: center;
+                            color: blue;
+                        }
+                        td
+                        {
+                            color:blue;
+                        }
+                        #prize0,#prize1,#prize2,#prize3,#prize4,#prize5,#prize6,#prize7,#prize8
+                        {
+                            text-align: center;
+                            width: 320px;
+                        }
+
+                    }
+                    table, th, td
+                    {
+                        border: 1px solid black;
+                    }
+                }
+                .ll 
+                {   
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                     .vv 
+                    {
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: bolder;
+                        font-family: 'Times New Roman', Times, serif;
+                        color: yellowgreen;
+                        text-shadow: 2px 2px 5px yellow;
+                    }
+                    .bought
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        //justify-content: space-between;
+                        align-items: center;
+                        .ticketImg
+                        {
+                            margin-bottom: 5px;
+                            width: 100px;
+                            border: 1px solid black;
+                            p 
+                            {
+                                text-align: center;
+                                font-weight: bold;
+                                
+                            }
+                        }
+                        button 
+                        {
+                            background-color: darkcyan;
+                            font-weight: bold;
+                            color: white;
+                            outline: none;
+                        }
+                    }
+                }
+                
+            }
+    }
+}

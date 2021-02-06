@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quay xổ số</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <link rel="stylesheet" href="./styles/ticket.css">
+    <link rel="stylesheet" href="./styles/all.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img id="lottery" src="./images/loto.gif" alt="Logo" style="width:40px;height:40px;" />
+            <marquee behavior="alternate">Xổ Số VIP PRO - Tự <code>x</code> (Mua - Dò - Trúng - Trao Giải)</marquee>
+        </header>
+        <div class="navigation">
+            <button class="item"><a href="./index.html">Mua Vé Số</a></button>
+            <button class="item"><a href="./loto.html">Quay Số</a></button>
+        </div>
+        <div class="ticketStore">
+            <div class="wallet">
+                <i class="fas fa-wallet"></i>
+                <span class="coin" id="coin">100.000 VNĐ</span>
+            </div>
+            <div class="seller">
+                <div class="space"></div>
+                <img src="./images/seller2.png" alt="Người bán hàng">
+                <div class="buyList" id="buyList"></div>
+            </div>
+            <div class="buyTicket">
+                <p>Nhập số vé muốn mua</p>
+                <div class="buy">
+                    <input type="text" id="buyTicket" placeholder="000000" name="" value="">
+                    <button id="submit" onclick="buyTicket()">Mua</button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    </div>
+    <script src="./js/ticket.js"></script>
+</body>
+
+</html>

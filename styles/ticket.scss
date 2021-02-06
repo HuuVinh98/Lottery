@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+}
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 70%;
+    margin: 20px auto 0px auto;
+    border-radius: 10px;
+    background: linear-gradient(to right top, rgba(255,255,255,0.1),rgba(255,255,255,1));
+    header
+    {
+        width: 100%;
+        height: 50px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        marquee 
+        {
+            color: blue;
+            font-size: 20px;
+            font-style: initial;
+            text-shadow: 2px 2px 5px red;
+        }
+    }
+    .navigation
+    {
+        width: 100%;
+        height: 30px;
+        background: linear-gradient(to right top, rgba($color: #4808f8, $alpha: 1.0),rgba($color: #4808f8, $alpha: 0.1));
+        .item
+        {
+            height: 100%;
+            border: none;
+            background:inherit;
+            margin-left: 10px;
+            margin-right: 10px;
+            &:hover
+            {
+                background-color: rgba($color: #d6cfeb, $alpha: 1.0);
+                a 
+                {
+                    color: yellow;
+                }
+            }
+            a
+            {
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+    }
+   .ticketStore
+   {
+       width: 100%;
+       margin-top: 20px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       flex-direction: column;
+       .wallet
+       {
+            margin-left: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           i 
+           {
+               color: chartreuse;
+               font-size: 30px;
+           }
+           .coin
+           {
+               font-size: 20px;
+               font-weight: bold;
+               text-align: center;
+           }
+       }
+       .seller
+       {
+           display: flex;
+           width: 100%;
+           .space
+           {
+               width: 30%;
+           }
+           img 
+           {
+               width: 40%;
+               height: 400px;
+           }
+           .buyList
+           {
+               width: 30%;
+               display: flex;
+               flex-direction: column;
+               //justify-content: space-between;
+               align-items: center;
+               .ticketImg
+               {
+                   margin-bottom: 5px;
+                   width: 100px;
+                   border: 1px solid black;
+                   p 
+                   {
+                       text-align: center;
+                       font-weight: bold;
+                   }
+               }
+           }
+       }
+       .buyTicket
+       {
+           border-radius: 30px 0px 30px 0px;
+           background-color: darkcyan;
+           width: 500px;
+           height: 100px;
+           text-align: center;
+           font-size: 30px;
+           color: white;
+           .buy
+           {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+                #buyTicket
+                {
+                    width: 40%;
+                    font-size: 30px;
+                    height: 35px;
+                    text-align: center;
+                    outline: none;
+                }
+                #submit
+                {
+                    width: 15%;
+                    height: 35px;
+                    font-size: 30px;
+                    color: blue;
+                }
+           }
+       }
+   }
+}

@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: 20px auto 0px auto;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.1)), to(white));
+  background: linear-gradient(to right top, rgba(255, 255, 255, 0.1), white);
+}
+
+.wrapper header {
+  width: 100%;
+  height: 50px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper header marquee {
+  color: blue;
+  font-size: 20px;
+  font-style: initial;
+  text-shadow: 2px 2px 5px red;
+}
+
+.wrapper .navigation {
+  width: 100%;
+  height: 30px;
+  background: -webkit-gradient(linear, left bottom, right top, from(#4808f8), to(rgba(72, 8, 248, 0.1)));
+  background: linear-gradient(to right top, #4808f8, rgba(72, 8, 248, 0.1));
+}
+
+.wrapper .navigation .item {
+  height: 100%;
+  border: none;
+  background: inherit;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.wrapper .navigation .item:hover {
+  background-color: #d6cfeb;
+}
+
+.wrapper .navigation .item:hover a {
+  color: yellow;
+}
+
+.wrapper .navigation .item a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper .mainContent {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.wrapper .mainContent .result {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .mainContent .result .resultArray {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 40%;
+  height: 100px;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.wrapper .mainContent .result .resultArray .number {
+  font-size: 100px;
+  color: red;
+  text-shadow: 2px 2px 5px blue;
+}
+
+.wrapper .mainContent .result .rotation {
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .mainContent .result .rotation .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .mainContent .result .rotation .control .controlItem {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 27%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: darkcyan;
+  color: white;
+}
+
+.wrapper .mainContent .result .rotation .control .controlItem #prize, .wrapper .mainContent .result .rotation .control .controlItem #times {
+  background-color: white;
+  border-radius: 10px;
+  color: blue;
+}
+
+.wrapper .mainContent .result .rotation .control .controlItem #prize {
+  width: 67%;
+}
+
+.wrapper .mainContent .result .rotation .control .controlItem #times {
+  width: 32%;
+}
+
+.wrapper .mainContent .result .rotation .control .action {
+  background-color: darkcyan;
+  height: 50px;
+  width: 16%;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper .mainContent .result .rotation .control .action:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.wrapper .mainContent .result .rotation #lottery {
+  margin-top: 20px;
+}
+
+.wrapper .mainContent .resultTable {
+  margin-top: 30px;
+  width: 100%;
+  height: 700px;
+  border-radius: 100px 0px 100px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.1)), to(white));
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), white);
+}
+
+.wrapper .mainContent .resultTable .cc {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.wrapper .mainContent .resultTable .cc p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  color: yellowgreen;
+  text-shadow: 2px 2px 5px yellow;
+}
+
+.wrapper .mainContent .resultTable .cc table {
+  width: 80%;
+  height: 90%;
+  font-size: 30px;
+}
+
+.wrapper .mainContent .resultTable .cc table th {
+  text-align: center;
+  color: blue;
+}
+
+.wrapper .mainContent .resultTable .cc table td {
+  color: blue;
+}
+
+.wrapper .mainContent .resultTable .cc table #prize0, .wrapper .mainContent .resultTable .cc table #prize1, .wrapper .mainContent .resultTable .cc table #prize2, .wrapper .mainContent .resultTable .cc table #prize3, .wrapper .mainContent .resultTable .cc table #prize4, .wrapper .mainContent .resultTable .cc table #prize5, .wrapper .mainContent .resultTable .cc table #prize6, .wrapper .mainContent .resultTable .cc table #prize7, .wrapper .mainContent .resultTable .cc table #prize8 {
+  text-align: center;
+  width: 320px;
+}
+
+.wrapper .mainContent .resultTable .cc table, .wrapper .mainContent .resultTable .cc th, .wrapper .mainContent .resultTable .cc td {
+  border: 1px solid black;
+}
+
+.wrapper .mainContent .resultTable .ll {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .mainContent .resultTable .ll .vv {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  color: yellowgreen;
+  text-shadow: 2px 2px 5px yellow;
+}
+
+.wrapper .mainContent .resultTable .ll .bought {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .mainContent .resultTable .ll .bought .ticketImg {
+  margin-bottom: 5px;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.wrapper .mainContent .resultTable .ll .bought .ticketImg p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.wrapper .mainContent .resultTable .ll .bought button {
+  background-color: darkcyan;
+  font-weight: bold;
+  color: white;
+  outline: none;
+}
+/*# sourceMappingURL=loto.css.map */
